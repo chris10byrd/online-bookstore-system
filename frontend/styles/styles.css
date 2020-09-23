@@ -1,0 +1,188 @@
+/* 
+    IMPORTANT NOTE:
+    This is basic CSS styling however the design as it is right now is not
+    responsive. This means it will not display properly on every resolution.
+    Will work on adding this after the first commit.
+*/
+
+
+/* 
+    The first three lines is what I use to reset the defaults placed by the browser.
+    Each tag has a box around it which basically coincides to its size.
+    The margin property adds space outside the box and the padding property add space on the inside.
+    The box-sizing: border-box line makes it so the box around the tag surrounds the content inside the tag perfectly.
+    Adding these makes it easier to get the page to look exactly how you would want it to. 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    Setting a consistent font across the website.
+    Font can be changed when necessary in specific CSS selectors.
+*/
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+/* 
+    Removing all symbols from undordered list.
+    This allows me to use them for layout and it looks better.
+*/
+ul {
+    list-style: none;
+}
+
+/* 
+    Making the container span the width of the page.
+    display: flex; lays the sidebar and main portion horizontally rather than vertically.
+*/
+.container {
+    width: 100%;
+    display: flex;
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+    width: 15%;
+    padding-top: 2.5vh;
+    text-align: center;
+    background-color: #8E1313;
+    color: white;
+}
+
+.sidebar-title {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.search-form {
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+.search-bar {
+    height: 50px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+nav {
+    font-size: 32px;
+}
+
+.nav-link {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin-top: 250%;
+    margin-bottom: 1rem;
+}
+
+/* 
+    Main section stlying
+*/
+
+main {
+    width: 100%;
+    color: #8E1313;
+    padding-left: .5vw;
+}
+
+/* 
+    Styling the top bar using the flex display option.
+    This allowed me to add the necessary spacing between the title and the top buttons.
+*/
+.top-bar {
+    width: 100%;
+    display: flex;
+    padding-top: 2.5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: auto;
+}
+
+.top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    margin-right: 5vw;
+}
+
+
+/* 
+    This essentially put the circle around the cart quantity and puts it in a position that will
+    always be relative to the cart icon.
+*/
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    bottom: 15px;
+    border: solid #8E1313 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.profile {
+margin-right: 6.5rem;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+}
+
+/* 
+    Styling for the sections that display books.
+*/
+
+section {
+    padding: 1vw;
+}
+
+hr {
+   border: none;
+   background-color: #8E1313;
+   height: 5px; 
+   width: 95%;
+   margin-left: 5px;
+   margin-bottom: 2vh;
+}
+
+.section-title {
+    font-size: 48px;
+    margin-bottom: -.5rem;
+}
+
+.top-sellers {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.books {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
