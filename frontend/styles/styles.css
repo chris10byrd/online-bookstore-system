@@ -159,6 +159,7 @@ background-color: white;
 */
 .prof-dropdown {
     position: relative;
+    left: -50px;
     display: inline-block;
     text-align: center;
 }
