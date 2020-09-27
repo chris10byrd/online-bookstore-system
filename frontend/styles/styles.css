@@ -146,12 +146,46 @@ main {
 
 .profile {
 margin-right: 6.5rem;
+border: none;
+background-color: white;
 }
 
 .profile img {
     width: 100px;
     height: 100px;
 }
+
+/* idk, needed to position the dropdown content? 
+*/
+.prof-dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* dropdown content, hidden by default 
+*/
+.prof-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+}
+
+/* links inside profile dropdown 
+*/
+.prof-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+/* display dropdown conten when profile icon is moused over 
+*/
+.prof-dropdown:hover .prof-dropdown-content {
+    display: block;
+}
+
 
 /* 
     Styling for the sections that display books.
@@ -186,3 +220,5 @@ hr {
     justify-content: space-between;
     text-align: center;
 }
+
+/* */
