@@ -169,16 +169,31 @@ background-color: white;
 .prof-dropdown-content {
     display: none;
     position: absolute;
-    background-color: aliceblue;
-    min-width: 160px;
+    z-index: 1;
+    left: -38%;
+    background-color: #8E1313;
+    color: white;
+    min-width: 250px;
+    border-radius: 10px;
+}
+
+.dropdown-top-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, .35);
 }
 
 /* links inside profile dropdown 
 */
 .prof-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    padding: 1rem;
+    text-decoration: none;
     display: block;
+}
+
+.prof-dropdown-content a:visited {
+    color: white;
 }
 
 /* display dropdown conten when profile icon is moused over 
