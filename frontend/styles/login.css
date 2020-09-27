@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 1vh 0;
+    align-items: center;
+}
+
+
+
+.title {
+    color: #8E1313;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8E1313;
+}
+
+a:hover {
+    font-size: 4.25rem;
+}
+
+.login-window {
+    width: 45%;
+    height: 80%;
+    background-color: #8E1313;
+    box-shadow: 3px 3px 15px black;
+}
+
+.register-window {
+    width: 45%;
+    height: 120vh;
+    background-color: #8E1313;
+    box-shadow: 3px 3px 15px black;
+    margin-bottom: 5vh;
+}
+
+.top-bar {
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+.top-button {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+}
+
+.top-button:hover {
+    font-size: 58px;
+}
+
+.top-button a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-button a:hover {
+    font-size: 58px;
+}
+
+.inactive {
+    background-color: white;
+    border: 2px #8E1313 solid;
+    color: #8E1313;
+    opacity: 96%;
+}
+
+.inactive a {
+    color: #8E1313;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 7vh;
+}
+
+form label {
+    font-size: 24px;
+    margin-bottom: 1.5vh;
+}
+
+.form-input {
+    width: 50%;
+    height: 5vh;
+    padding: .5rem;
+    text-align: center;
+    margin-bottom: 7vh;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    width: 25%;
+    height: 6vh;
+    margin-top: 1vh;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #8E1313;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.submit-btn:hover {
+    width: 30%;
+    height: 6.5vh;
+}
+
+footer {
+    margin-top: 6vh;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
