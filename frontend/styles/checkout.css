@@ -1,0 +1,104 @@
+.checkout-list {
+    display: flex;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.book-details {
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-details p:first-of-type {
+    margin-top: 2rem;
+}
+
+.book-details p {
+    margin-top: 1rem;
+}
+
+.books {
+    flex-direction: column;
+    overflow: scroll;
+    height: 65vh;
+    width: 100%;
+}
+
+.checkout-book-list {
+    width: 35vw;
+}
+
+.checkout-book-list h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.payment-section {
+    text-align: center;
+    width: 100%;
+}
+
+.payment-section h1 {
+    font-size: 48px;
+    margin-bottom: 4rem;
+}
+
+.payment-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 350px;
+    height: 25px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #8E1313;
+    border: 1px solid #8E1313;
+    border-radius: 5px;
+}
+.details {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details label {
+    font-size: 18px;
+}
+
+.details input {
+    width: 125px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+}
+
+.checkout-btn {
+    width: 125px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: #8E1313;
+    color: white;
+}
+
+footer {
+    margin-top: 35.3vh;
+}
