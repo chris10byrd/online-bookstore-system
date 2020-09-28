@@ -87,8 +87,12 @@ nav {
     font-size: 32px;
 }
 
-.nav-link {
-    margin-bottom: 25px;
+nav li {
+   margin-bottom: 25px; 
+}
+
+.nav-link:visited {
+    color: white;
 }
 
 footer {
@@ -124,6 +128,10 @@ main {
     margin-bottom: auto;
 }
 
+.main-title a:visited {
+    color: #8E1313;
+}
+
 .top-buttons {
     display: flex;
     align-items: center;
@@ -131,9 +139,87 @@ main {
 }
 
 .cart {
+    position: relative;
     margin-right: 5vw;
 }
 
+.cart:hover .cart-list {
+    display: block;
+}
+
+.cart-list{
+    position: absolute;
+    background-color: white;
+    left: -135px;
+    top: 65px;
+    border: 2px solid #8E1313;
+    border-radius: 5px;
+    display: none;
+    z-index: 4;
+}
+
+.cart-item {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem .25rem .5rem;
+}
+
+.cart-book {
+    display: flex;
+}
+
+.cart-buttons {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.cart-buttons form {
+    display: flex;
+}
+
+.cart-buttons form input {
+    width: 45px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #8E1313;
+    margin-left: 1rem;
+    text-align: center;
+    color: #8E1313;
+}
+
+.delete-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.cart-book-img {
+    width: 75px;
+    height: 105px;
+    margin-right: .5rem;
+}
+
+.cart-text {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.cart-text:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.checkout-link {
+    color: #8E1313;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.checkout-link:visited {
+    color: #8E1313;
+}
 
 /* 
     This essentially put the circle around the cart quantity and puts it in a position that will
@@ -191,6 +277,7 @@ background-color: white;
     width: 100%;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, .35);
+    border-radius: 10px 10px 0 0;
 }
 
 /* links inside profile dropdown 
