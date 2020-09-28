@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+main {
+    width: 100%;
+    color: #8E1313;
+    padding-left: .5vw;
+}
+
+.page-header {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+form.search-bar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: center;
+    width: 60%;
+    background: #f1f1f1;
+    margin-top:20px;
+  }
+
+  form.search-bar button {
+    float: center;
+    width: 20%;
+    padding: 10px;
+    background: #8E1313;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+  }
+  
+  form.search-bar button:hover {
+    background: #750303;
+  }
+
+  form.search-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .add-book {
+    width: 80%;
+    padding: 10px;
+    background: #8E1313;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  .add-book:hover {
+    background: #750303;
+  }
+  
+    table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row-button { 
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* .edit-button { 
+
+
+  }
+
+  .remove-button { 
+
+
+  }
+  
+  */
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

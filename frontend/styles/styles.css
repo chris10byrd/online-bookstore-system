@@ -44,6 +44,10 @@ ul {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Sidebar Styling */
 
 .sidebar {
@@ -58,6 +62,10 @@ ul {
 .sidebar-title {
     font-size: 64px;
     text-transform: uppercase;
+}
+
+.sidebar-title a:visited {
+    color: white;
 }
 
 .search-form {
@@ -231,11 +239,74 @@ hr {
     margin-bottom: 2vh;
 }
 
+.featured {
+    overflow: hidden;
+}
+
 .books {
     width: 95%;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 3vh;
+}
+
+.img-container {
+    position: relative;
+    height: 330px;
+}
+
+.img-cover {
+    display: flex;
+    flex-grow: 0;
+    position: relative;
+    top: -330px;
+    opacity: .4;
+    background-color: white;
+    width: 100%;
+    height: 310px;
+    z-index: 0;
+    display: none;
+}
+
+.cart-button {
+    position: relative;
+    top: -500px;
+    z-index: 2;
+    padding: 1rem 2rem;
+    max-height: 50px;
+    border: none;
+    box-shadow: 3px 3px 10px black;
+    background-color: #8E1313;
+    color: white;
+    font-weight: bold; 
+    display: none;
+}
+
+.img-container:hover .img-cover {
+    display: flex;
+}
+
+.img-container:hover .cart-button {
+    display: inline-block;
+}
+
+.book-img {
+    top: -20px;
+    z-index: -1;
+}
+
+.book-title {
+    text-decoration: none;
+    max-height: 1rem;
+}
+
+.book-title:visited {
+    color: #8E1313;
+}
+
+.book-title:hover {
+    font-size: 1.25rem;
 }
 
 /* */

@@ -1,0 +1,57 @@
+
+
+.search-term {
+    display: none;
+}
+
+.genre-options {
+    display: none;
+}
+
+.filter-bar {
+    width: 100%;
+}
+
+.filter-bar h3 {
+    font-size: 24px;
+}
+
+.filter-options {
+    display: flex;
+    border: 3px solid #8E1313;
+}
+
+.filter-options li {
+    padding: 1.5rem 2rem;
+    font-size: 24px;
+}
+
+
+.filter-options li:hover {
+    color: white;
+    background-color: #8E1313;
+}
+
+.genre-dropdown:hover .genre-options { 
+    display: flex;
+}
+
+.genre-options {
+    position: absolute;
+    left: 14.55%;
+    margin-top: 25px;
+    min-width: 250px;
+    background-color: #8E1313;
+    z-index: 5;
+}
+
+.genre-option:hover {
+    font-size: 28px;
+}
+
+.book-list {
+    margin-top: 1vh;
+    overflow: hidden;
+}
+
+
