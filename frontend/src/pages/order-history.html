@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The link tag allows us to add the CSS styles to the document -->
     <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/checkout.css">
+    <link rel="stylesheet" href="../../styles/order-history.css">
+
     <!-- Adding a font from Google Fonts. -->
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
     <!-- The title tag refers to the text displayed on the tab in the browser. -->
@@ -122,7 +123,8 @@
                                     </div>
                                 </li>
                                 <li class="cart-text">Total: $55.96</li>
-                                <li class="cart-text"><a href="" class="checkout-link">Checkout</a></li>
+                                <li class="cart-text"><a href="./checkout.html" class="checkout-link">Checkout</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -137,123 +139,42 @@
                                     <a href="./register.html">Register</a>
                                 </div>
                                 <a href="">Edit Profile</a>
-                                <a href="./order-history.html">Order History</a>
+                                <a href="">Order History</a>
                             </div>
                         </button>
                     </li>
                 </ul>
             </div>
-            <section class="checkout-list">
-                <div class="checkout-book-list">
-                    <h1>Cart</h1>
-                    <ul class="books">
-                        <!-- Each <li> tag is an book that will be displayed. -->
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
+            <!-- Order History Table -->
+            <h1>Your Order History</h2>
+                <table>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Order Price</th>
+                        <th>Order Status</th>
+                    </tr>
+                    <tr>
+                        <td><a href="./order-details.html">0123456789</a></td>
+                        <td>$56.99</td>
+                        <td>Complete</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./order-details.html">0123456789</a></td>
+                        <td>$56.99</td>
+                        <td>Complete</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./order-details.html">0123456789</a></td>
+                        <td>$56.99</td>
+                        <td>Complete</td>
+                    </tr>
+                    <tr class="last-order">
+                        <td><a href="./order-details.html">0123456789</a></td>
+                        <td>$56.99</td>
+                        <td>Complete</td>
+                    </tr>
+                </table>
 
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
-
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
-
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
-
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="payment-section">
-                    <h1>Payment</h1>
-                    <form action="">
-                        <label for="">Card Number</label>
-                        <input type="nubmer">
-                        <div class="details">
-                            <div class="detail">
-                                <label for="">Expiration Date</label>
-                                <input type="nubmer">
-                            </div>
-                            <div class="detail">
-                                <label for="">CCV</label>
-                                <input type="nubmer">
-                            </div>
-                        </div>
-                        <label for="">Address</label>
-                        <input type="text">
-                        <div class="details">
-                            <div class="detail">
-                                <label for="">State</label>
-                                <input type="text">
-                            </div>
-                            <div class="detail">
-                                <label for="">Zip Code</label>
-                                <input type="nubmer">
-                            </div>
-                        </div>
-                        <label for="">Total $56.96</label>
-                        <input type="submit" value="Checkout" class="checkout-btn">
-                    </form>
-                </div>
-            </section>
         </main>
     </div>
 </body>

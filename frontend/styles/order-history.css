@@ -1,0 +1,27 @@
+table {
+    width: 75%;
+    border: 1px solid #8E1313;
+}
+
+th {
+    background-color: #8E1313;
+    text-align: left;
+    color: white;
+    padding: 1rem .5rem;
+}
+
+td {
+    padding: .75rem .5rem;
+    border-bottom: 1px solid #8E1313;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.last-order td {
+    border: none;
+}
+
+
+

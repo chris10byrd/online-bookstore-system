@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The link tag allows us to add the CSS styles to the document -->
     <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/checkout.css">
+    <link rel="stylesheet" href="../../styles/order-details.css">
     <!-- Adding a font from Google Fonts. -->
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
     <!-- The title tag refers to the text displayed on the tab in the browser. -->
@@ -143,9 +143,9 @@
                     </li>
                 </ul>
             </div>
-            <section class="checkout-list">
-                <div class="checkout-book-list">
-                    <h1>Cart</h1>
+            <section class="order-list">
+                <div class="order-book-list">
+                    <h1>Order Items</h1>
                     <ul class="books">
                         <!-- Each <li> tag is an book that will be displayed. -->
                         <li>
@@ -222,36 +222,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="payment-section">
-                    <h1>Payment</h1>
-                    <form action="">
-                        <label for="">Card Number</label>
-                        <input type="nubmer">
-                        <div class="details">
-                            <div class="detail">
-                                <label for="">Expiration Date</label>
-                                <input type="nubmer">
-                            </div>
-                            <div class="detail">
-                                <label for="">CCV</label>
-                                <input type="nubmer">
-                            </div>
-                        </div>
-                        <label for="">Address</label>
-                        <input type="text">
-                        <div class="details">
-                            <div class="detail">
-                                <label for="">State</label>
-                                <input type="text">
-                            </div>
-                            <div class="detail">
-                                <label for="">Zip Code</label>
-                                <input type="nubmer">
-                            </div>
-                        </div>
-                        <label for="">Total $56.96</label>
-                        <input type="submit" value="Checkout" class="checkout-btn">
-                    </form>
+                <div class="status-section">
+                    <h1 class="order-status">Order Status</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211832.36792693147!2d-83.52920733445973!3d33.944195122567855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f66d19b4b433b9%3A0x4d747202d69d617c!2sAthens%2C%20GA!5e0!3m2!1sen!2sus!4v1601408237391!5m2!1sen!2sus"
+                        width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                    <h2>Total: $56.96</h3>
+                        <h3>Order Delivered</h3>
                 </div>
             </section>
         </main>

@@ -1,0 +1,58 @@
+.book-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.book-details {
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-details p:first-of-type {
+    margin-top: 2rem;
+}
+
+.book-details p {
+    margin-top: 1rem;
+}
+
+.order-book-list {
+    width: 45vw;
+}
+
+.order-book-list h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.status-section {
+    text-align: center;
+    width: 100%;
+}
+
+.order-list {
+    display: flex;
+}
+
+.books {
+    flex-direction: column;
+    overflow: scroll;
+    height: 60vh;
+    width: 100%;
+}
+
+iframe {
+    margin-bottom: 2rem;
+}
+
+.order-status {
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 35.3vh;
+}
