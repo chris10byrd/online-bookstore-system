@@ -1,34 +1,23 @@
-<!-- Home Page Prototype: Christian Byrd -->
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Head tag contains meta-data and also links to the stylesheet or external fonts. -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The link tag allows us to add the CSS styles to the document -->
     <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/checkout.css">
-    <!-- Adding a font from Google Fonts. -->
+    <link rel="stylesheet" href="../../styles/bookdetails.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
-    <!-- The title tag refers to the text displayed on the tab in the browser. -->
-    <title>OBS</title>
+    <title>OBS | Book Details</title>
 </head>
 
-<!-- Everything hosted within the body tag is displayed onto the page -->
-
 <body>
-    <!-- Contains the entirety of the home page, allows for easier styling through CSS, Check the container class in the css file.-->
     <div class="container">
-        <!-- Contains the side bar for the page. -->
         <aside class="sidebar">
             <h1 class="sidebar-title"><a href="../index.html">Online</a></h1>
-            <!-- Form for handling search bar functionality. Not yet implemented. -->
             <form action="" class="search-form">
                 <input type="text" name="" class="search-bar">
             </form>
-            <!-- List of links in the side bar. -->
             <nav>
                 <ul>
                     <li><a href="" class="nav-link">My Profile</a></li>
@@ -43,7 +32,6 @@
             </footer>
         </aside>
 
-        <!-- Holds all the content displayed on the main portion of the page. -->
         <main>
             <div class="top-bar">
                 <h1 class="main-title"><a href="../index.html">Bookstore System</a></h1>
@@ -122,7 +110,7 @@
                                     </div>
                                 </li>
                                 <li class="cart-text">Total: $55.96</li>
-                                <li class="cart-text"><a href="" class="checkout-link">Checkout</a></li>
+                                <li class="cart-text"><a href="./checkout.html" class="checkout-link">Checkout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -130,131 +118,46 @@
                     <li class="prof-dropdown">
                         <button class="profile">
                             <img src="../../res/profile-image.svg" alt="Profile Image">
-                            <!-- input type="image" src="../res/profile-image.svg" alt="My Profile"-->
                             <div class="prof-dropdown-content">
                                 <div class="dropdown-top-bar">
                                     <a href="./login.html">Log in</a>
                                     <a href="./register.html">Register</a>
                                 </div>
-                                <a href="../pages/editprofile.html">Edit Profile</a>
+                                <a href="../../src/pages/editprofile.html">Edit Profile</a>
                                 <a href="">Order History</a>
                             </div>
                         </button>
                     </li>
                 </ul>
             </div>
-            <section class="checkout-list">
-                <div class="checkout-book-list">
-                    <h1>Cart</h1>
-                    <ul class="books">
-                        <!-- Each <li> tag is an book that will be displayed. -->
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
 
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
-
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
-
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="book-item">
-                                <!-- Because the book links to the detail page we surroung the image with an <a> tag to make it a link.-->
-
-                                <div class="img-container">
-                                    <img src="../../res/book cover 1.png" alt="" class="book-img">
-                                    <div class="img-cover"></div>
-                                    <button class="cart-button">Remove from Cart</button>
-                                </div>
-                                <div class="book-details">
-                                    <a href="" class="book-title">
-                                        <h3>Book Title</h3>
-                                    </a>
-                                    <p>Author</p>
-                                    <p>$13.99</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <section class="top-sellers">
+                <div class="section-header">
+                    <h2 class="section-title">Book Details</h2>
+                    <hr>
                 </div>
-                <div class="payment-section">
-                    <h1>Payment</h1>
-                    <form action="">
-                        <label for="">Card Number</label>
-                        <input type="number">
-                        <div class="details">
-                            <div class="detail">
-                                <label for="">Expiration Date</label>
-                                <input type="number">
-                            </div>
-                            <div class="detail">
-                                <label for="">CCV</label>
-                                <input type="number">
-                            </div>
-                        </div>
-                        <label for="">Address</label>
-                        <input type="text">
-                        <div class="details">
-                            <div class="detail">
-                                <label for="">State</label>
-                                <input type="text">
-                            </div>
-                            <div class="detail">
-                                <label for="">Zip Code</label>
-                                <input type="number">
-                            </div>
-                        </div>
-                        <input type="submit" value="Checkout" class="checkout-btn">
-                    </form>
+                </section>
+            
+            
+            
+            <section class="details-container">
+            
+                <div class="img-container">
+                
+                    <img src="../../res/book cover 1.png" alt="" class="book-img">
+                    <div class="img-cover"></div>
+                    <button class="cart-button">Add to Cart</button>
+            
                 </div>
-            </section>
-        </main>
-    </div>
-</body>
 
-</html>
+                <div class="info-container">
+                    <h1>Title 1</h1>
+                    <p>Author 1</p>
+                    <p>Publisher 1</p>
+                    <p>ISBN 1</p>
+                    <p> </p>
+                    <p>$0.00</p>
+
+
+
+                </div>
