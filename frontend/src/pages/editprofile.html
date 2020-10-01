@@ -1,35 +1,20 @@
-<!-- Home Page Prototype: Christian Byrd -->
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Head tag contains meta-data and also links to the stylesheet or external fonts. -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The link tag allows us to add the CSS styles to the document -->
     <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/order-history.css">
-
-    <!-- Adding a font from Google Fonts. -->
+    <link rel="stylesheet" href="../../styles/editprofile.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
-    <!-- The title tag refers to the text displayed on the tab in the browser. -->
     <title>OBS</title>
 </head>
 
-<!-- Everything hosted within the body tag is displayed onto the page -->
 
 <body>
-    <!-- Contains the entirety of the home page, allows for easier styling through CSS, Check the container class in the css file.-->
     <div class="container">
-        <!-- Contains the side bar for the page. -->
         <aside class="sidebar">
             <h1 class="sidebar-title"><a href="../index.html">Online</a></h1>
-            <!-- Form for handling search bar functionality. Not yet implemented. -->
-            <form action="" class="search-form">
-                <input type="text" name="" class="search-bar">
-            </form>
-            <!-- List of links in the side bar. -->
             <nav>
                 <ul>
                     <li><a href="" class="nav-link">My Profile</a></li>
@@ -43,8 +28,6 @@
                 <p>Online Bookstore System</p>
             </footer>
         </aside>
-
-        <!-- Holds all the content displayed on the main portion of the page. -->
         <main>
             <div class="top-bar">
                 <h1 class="main-title"><a href="../index.html">Bookstore System</a></h1>
@@ -123,8 +106,7 @@
                                     </div>
                                 </li>
                                 <li class="cart-text">Total: $55.96</li>
-                                <li class="cart-text"><a href="./checkout.html" class="checkout-link">Checkout</a>
-                                </li>
+                                <li class="cart-text"><a href="./checkout.html" class="checkout-link">Checkout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -138,45 +120,108 @@
                                     <a href="./login.html">Log in</a>
                                     <a href="./register.html">Register</a>
                                 </div>
-                                <a href="./editprofile.html">Edit Profile</a>
-                                <a href="">Order History</a>
+                                <a href="">Edit Profile</a>
+                                <a href="./order-history.html">Order History</a>
                             </div>
                         </button>
                     </li>
                 </ul>
             </div>
-            <!-- Order History Table -->
-            <h1>Your Order History</h2>
-                <table>
-                    <tr>
-                        <th>Order Number</th>
-                        <th>Order Price</th>
-                        <th>Order Status</th>
-                    </tr>
-                    <tr>
-                        <td><a href="./order-details.html">0123456789</a></td>
-                        <td>$56.99</td>
-                        <td>Complete</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order-details.html">0123456789</a></td>
-                        <td>$56.99</td>
-                        <td>Complete</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order-details.html">0123456789</a></td>
-                        <td>$56.99</td>
-                        <td>Complete</td>
-                    </tr>
-                    <tr class="last-order">
-                        <td><a href="./order-details.html">0123456789</a></td>
-                        <td>$56.99</td>
-                        <td>Complete</td>
-                    </tr>
-                </table>
 
-        </main>
+            <section class="top-sellers">
+                <div class="section-header">
+                    <h2 class="section-title">Edit Profile</h2>
+                    <hr>
+                </div>
+            </section>
+
+            <div class="info-container">
+                <div class="info-panel">
+                    <div class="panel-header">
+                        <h4 class="panel-title">Password</h4>
+                    </div>
+                    <form action="">
+                        <label>Current Password</label>
+                        <input type="text">
+                    </form>
+                    <form>
+                        <label>New Password</label>
+                        <input type="text">
+                    </form>
+                </div>
+
+                <div class="info-panel">
+                    <div class="panel-header">
+                        <h4 class="panel-title">Personal Info</h4>
+                    </div>
+                    <form action="">
+                        <label>First Name</label>
+                        <input type="text" placeholder="First Name">
+                    </form>
+                    <form>
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Last Name">
+                    </form>
+                    <form action="">
+                        <label>Email</label>
+                        <input type="text" placeholder="Email">
+                    </form>
+                    <form>
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="706 XXX-XXXX">
+                    </form>
+                </div>
+
+                <div class="info-panel">
+                    <div class="panel-header">
+                        <h4 class="panel-title">Payment Info</h4>
+                    </div>
+                    <form action="">
+                        <label>Card Number</label>
+                        <input type="text" placeholder=" XXXXXXXXXX4567">
+                    </form>
+                    <form>
+                        <label>CVC</label>
+                        <input type="text" placeholder="XXX">
+                    </form>
+                    <form action="">
+                        <label>Expiration Date</label>
+                        <input type="text" placeholder="12/23">
+                    </form>
+                </div>
+
+                <div class="info-panel">
+                    <div class="panel-header">
+                        <h4 class="panel-title">Address Info</h4>
+                    </div>
+                    <form action="">
+                        <label>Address Line 1</label>
+                        <input type="text">
+                    </form>
+                    <form>
+                        <label>Address Line 2</label>
+                        <input type="text">
+                    </form>
+                    <form action="">
+                        <label>City</label>
+                        <input type="text" placeholder="Athens">
+                    </form>
+                    <form action="">
+                        <label>State</label>
+                        <input type="text" placeholder="Georgia">
+                    </form>
+                    <form action="">
+                        <label>Zip</label>
+                        <input type="text" placeholder="30605">
+                    </form>
+                </div>
+
+                <button class="submit">Submit Changes</button>
+
+            </div>
     </div>
+    </section>
+    </main>
 </body>
 
 </html>

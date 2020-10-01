@@ -250,8 +250,6 @@ background-color: white;
     height: 100px;
 }
 
-/* idk, needed to position the dropdown content? 
-*/
 .prof-dropdown {
     position: relative;
     left: -50px;
@@ -259,8 +257,6 @@ background-color: white;
     text-align: center;
 }
 
-/* dropdown content, hidden by default 
-*/
 .prof-dropdown-content {
     display: none;
     position: absolute;
@@ -280,8 +276,6 @@ background-color: white;
     border-radius: 10px 10px 0 0;
 }
 
-/* links inside profile dropdown 
-*/
 .prof-dropdown-content a {
     padding: 1rem;
     text-decoration: none;
@@ -292,16 +286,9 @@ background-color: white;
     color: white;
 }
 
-/* display dropdown conten when profile icon is moused over 
-*/
 .prof-dropdown:hover .prof-dropdown-content {
     display: block;
 }
-
-
-/* 
-    Styling for the sections that display books.
-*/
 
 section {
     padding: 1vw;
